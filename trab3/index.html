@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário Gabriel Mendes Tulio</title>
+
+ 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: sans-serif;
+    } 
+
+    p {
+      text-align: justify;
+    }
+
+    .rating {
+  display: flex;
+  flex-direction: row-reverse; 
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating label i {
+  font-size: 24px; 
+  color: grey; 
+}
+
+.rating input[type="radio"]:checked ~ label i {
+  color: gold; 
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="card mx-auto shadow" style="max-width: 700px;">
+      <div class="card-body">
+        <h1 class="mb-4 text-center">Formulário Gabriel Mendes Tulio</h1>
+        <form id="myForm">
+          <div class="form-group">
+            <input type="image" class="img-thumbnail float-left mr-3 mb-3" id="image" src="imagem.jpeg" alt="Enviar"
+              style="width: 200px; height: auto;" />
+          </div>
+
+          <p>Meu nome é Gabriel Mendes Túlio e tenho 21 anos. Atualmente, estou cursando Análise e Desenvolvimento de
+            Sistemas na Universidade Federal do Paraná (UFPR), uma instituição de renome que tem sido fundamental para
+            minha formação acadêmica e profissional.</p>
+          <p>Paralelamente aos meus estudos, estou estagiando como Analista de Dados no Bradesco, uma das maiores
+            instituições financeiras do Brasil. Esta experiência tem sido incrivelmente enriquecedora, permitindo-me
+            aplicar os conhecimentos teóricos adquiridos na universidade em situações práticas e reais do mercado de
+            trabalho.</p>
+          <p>Antes de ingressar na UFPR, concluí minha formação em Programação de Jogos Digitais pelo Instituto Federal
+            do Paraná (IFPR). Este curso foi essencial para o desenvolvimento das minhas habilidades em programação e
+            design de jogos, áreas que sempre me fascinaram e que me proporcionaram uma base sólida para minha carreira
+            na área de tecnologia.</p>
+          <p>A combinação destas experiências acadêmicas e profissionais tem moldado minha trajetória de forma
+            significativa, ampliando meus horizontes e preparando-me para futuros desafios e oportunidades no campo da
+            tecnologia da informação.</p>
+          <hr class="my-4">
+          <div class="form-group">
+            <label for="text">Quer deixar uma mensagem? Escreva abaixo:</label>
+            <textarea class="form-control" id="text" name="text" rows="2"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="name" class="form-control" id="name" name="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="sname">Sobrenome:</label>
+            <input type="sname" class="form-control" id="sname" name="sname" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="tel">Telefone:</label>
+            <input type="tel" class="form-control" id="tel" name="tel" placeholder="(XX) XXXX-XXXX" required />
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block btn-sm">Enviar</button>
+          <div class="container mt-3">
+            <div class="row justify-content-center">
+              <div class="col-md-5 text-center">
+                <h2 class="mb-1" style="font-size: 18px;">Avalie meu formulário</h2>
+                <div class="rating d-flex justify-content-center">
+                  <input type="radio" id="star5" name="rating" value="5" class="d-none">
+                  <label for="star5"><i class="bi bi-star"></i></label>
+                  <input type="radio" id="star4" name="rating" value="4" class="d-none">
+                  <label for="star4"><i class="bi bi-star"></i></label>
+                  <input type="radio" id="star3" name="rating" value="3" class="d-none">
+                  <label for="star3"><i class="bi bi-star"></i></label>
+                  <input type="radio" id="star2" name="rating" value="2" class="d-none">
+                  <label for="star2"><i class="bi bi-star"></i></label>
+                  <input type="radio" id="star1" name="rating" value="1" class="d-none">
+                  <label for="star1"><i class="bi bi-star"></i></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
